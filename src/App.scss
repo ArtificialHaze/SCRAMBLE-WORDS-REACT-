@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  font-family: sans-serif, monospace;
+  background: #2b313e;
+  color: #fff;
+}
+
+.word_scramble {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .message {
+    position: absolute;
+    color: #000;
+    font-weight: bold;
+    font-size: 100px;
+    z-index: 2;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 50px;
+    box-shadow: 2px 3px 20px 0px #d0d0d0;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+}
+
+.content {
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px;
+  width: 100%;
+}
+
+.new_game_btn {
+  margin-top: 10px;
+}
+
+.start_game_btn {
+  padding: 15px 25px !important;
+  font-weight: 600 !important;
+  font-size: 25px;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+.btn:not(.enter_btn) {
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.enter_btn {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.input {
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.board {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  .square_bg {
+    background: #cfcfcf;
+    width: 30px;
+    height: 40px;
+    font-size: 18px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-weight: 600;
+  }
+}
+
+.scrambled_word {
+  font-size: 25px;
+  margin: 10px;
+  color: #999;
+  font-weight: 600;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+}
